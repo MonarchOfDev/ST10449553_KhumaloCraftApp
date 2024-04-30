@@ -1,5 +1,9 @@
-var builder = WebApplication.CreateBuilder(args);
+using KhumaloCraftApp.Models;
 
+using Microsoft.EntityFrameworkCore;
+
+var builder = WebApplication.CreateBuilder(args);
+//builder.Services.AddDbContext<ObjectionBackOfficeDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("AkonConnection")));
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 

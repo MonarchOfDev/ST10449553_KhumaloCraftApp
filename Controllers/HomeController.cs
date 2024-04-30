@@ -7,6 +7,7 @@ namespace KhumaloCraftApp.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        //private readonly ObjectionBackOfficeDbContext _db;
 
         public HomeController(ILogger<HomeController> logger)
         {
